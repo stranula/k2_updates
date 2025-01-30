@@ -7,8 +7,9 @@ Instructions for implementation:
 2. Backup /usr/share/klipper/klippy/extras/probe.py
 3. Delete /usr/share/klipper/klippy/extras/probe.py and probe.pyc
 4. Copy my copy of probe.py to /usr/share/klipper/klippy/extras/
-5. Add the following to printer.cfg  
-    [axis_twist_compensation]  
+5. Add the following to printer.cfg
+
+    > [axis_twist_compensation]  
     #speed: 50  
     horizontal_move_z: 5  
     calibrate_start_x: 5  
@@ -16,7 +17,8 @@ Instructions for implementation:
     calibrate_y: 175  
     calibrate_start_y: 5  
     calibrate_end_y: 345  
-    calibrate_x: 175  
+    calibrate_x: 175
+
 7. Power Cycle the machine
 8. Home all Axes
 9. In Fluidd console, run Z_TILT_ADJUST
