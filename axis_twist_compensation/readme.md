@@ -11,7 +11,7 @@ Instructions for implementation:
 
         [axis_twist_compensation]  
         #speed: 50  
-        horizontal_move_z: 5  
+        #horizontal_move_z: 5  
         calibrate_start_x: 5  
         calibrate_end_x: 345  
         calibrate_y: 175  
@@ -28,7 +28,7 @@ Instructions for implementation:
 11. Home Z
 12. In Fluidd Console run
 
-        AXIS_TWIST_COMPENSATION_CALIBRATE SAMPLE_COUNT=5  
+        AXIS_TWIST_COMPENSATION_CALIBRATE SAMPLE_COUNT=3  
 
     A new window will come up for you to adjust the z offset using the paper method (putting a piece of paper under the nozzle and lowering the Z until they touch). If oyu have feeler gauges, go with that. The goal here is to get the same resistance on all 5 probe points. I have always gone for the paper can be pulled out without tearing, or excess force, but cannot be pushed back in any further.
 
@@ -36,7 +36,7 @@ Instructions for implementation:
 
 13. In Fluidd Console run
 
-        AXIS_TWIST_COMPENSATION_CALIBRATE AXIS=Y SAMPLE_COUNT=5
+        AXIS_TWIST_COMPENSATION_CALIBRATE AXIS=Y SAMPLE_COUNT=3
 
     Do the same paper test for all 5 points.
 
@@ -49,4 +49,4 @@ Instructions for implementation:
 Alternative Option
 Under the assumption you are using the stock PRTouch (which, why wouldn't you be right now?) youw may also try 
 
-        AXIS_TWIST_COMPENSATION_CALIBRATE AUTO=TRUE SAMPLE_COUNT=5
+        AXIS_TWIST_COMPENSATION_CALIBRATE AUTO=TRUE SAMPLE_COUNT=3
