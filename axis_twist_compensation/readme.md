@@ -11,11 +11,11 @@ Instructions for implementation:
     [axis_twist_compensation]  
     speed: 50  
     horizontal_move_z: 5  
-    calibrate_start_x: 0  
-    calibrate_end_x: 350  
+    calibrate_start_x: 5  
+    calibrate_end_x: 345  
     calibrate_y: 175  
-    calibrate_start_y: 0  
-    calibrate_end_y: 350  
+    calibrate_start_y: 5  
+    calibrate_end_y: 345  
     calibrate_x: 175  
 7. Power Cycle the machine
 8. Home all Axes
