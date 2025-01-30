@@ -9,7 +9,7 @@ Instructions for implementation:
 4. Copy my copy of probe.py to /usr/share/klipper/klippy/extras/
 5. Add the following to printer.cfg  
     [axis_twist_compensation]  
-    speed: 50  
+    #speed: 50  
     horizontal_move_z: 5  
     calibrate_start_x: 5  
     calibrate_end_x: 345  
