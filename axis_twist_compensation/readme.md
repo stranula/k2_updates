@@ -18,19 +18,18 @@ Instructions for implementation:
     calibrate_end_y: 350  
     calibrate_x: 175  
 7. Power Cycle the machine
+8. Home all Axes
+9. In Fluidd console, run Z_TILT_ADJUST
+10. Home Z
+11. In Fluidd Console run AXIS_TWIST_COMPENSATION_CALIBRATE SAMPLE_COUNT=5  
 
-In Fluide Console run  
-AXIS_TWIST_COMPENSATION_CALIBRATE  
+    A new window will come up for you to adjust the z offset using the paper method (putting a piece of paper under the nozzle and lowering the Z until they touch). If oyu have feeler gauges, go with that. The goal here is to get the same resistance on all 5 probe points. I have always gone for the paper can be pulled out without tearing, or excess force, but cannot be pushed back in any further.
 
-A new window will come up for you to adjust the z offset using the paper method (putting a piece of paper under the nozzle and lowering the Z until they touch). If oyu have feeler gauges, go with that. The goal here is to get the same resistance on all 5 probe points. I have always gone for the paper can be pulled out without tearing, or excess force, but cannot be pushed back in any further.
+    Do this for all 5 points.
 
-Do this for all 5 points.
+13. In Fluidd Console run AXIS_TWIST_COMPENSATION_CALIBRATE AXIS=Y SAMPLE_COUNT=5
 
-In Fluide Console run  
-AXIS_TWIST_COMPENSATION_CALIBRATE AXIS=Y
+    Do the same paper test for all 5 points.
 
-Do the same for all 5 points.
-
-SAVE_CONFIG
-
-Run a first layer test and see if it improves.
+14. In Fluidd Console run SAVE_CONFIG
+15. Run a first layer test and see if it improves.
